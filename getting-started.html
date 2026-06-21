@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started with Sara — Jodaks</title>
+  <meta name="description" content="Step-by-step guide to installing and configuring Sara, the Shopify cart monitoring app by Jodaks." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .step-number {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .step-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .step-card h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .step-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+
+    .step-card p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .step-card ul {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      padding-left: 1.25rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .step-card li {
+      margin-bottom: 0.3rem;
+    }
+
+    .step-screenshot {
+      display: block;
+      width: 100%;
+      margin-top: 1.25rem;
+      border-radius: calc(var(--radius) - 2px);
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Jodaks</a>
+      <ul class="nav-links">
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <h1>Getting Started with Sara</h1>
+      <p>Set up cart monitoring and your first offer in four steps.</p>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="step-card">
+      <p class="step-number">Step 1</p>
+      <h2>Install Sara from the Shopify App Store</h2>
+      <p>Find Sara in the Shopify App Store and click <strong>Install</strong>. You'll be asked to approve the permissions Sara needs to read cart data and deliver offers to your storefront. Once approved, you'll be taken directly into the Sara dashboard inside your Shopify admin.</p>
+      <figure style="margin-top: 1.25rem; text-align: center;">
+        <img src="sara-icon.png" alt="Sara app icon" style="width: 120px; height: 120px; border-radius: 24px; border: 1px solid var(--border);" />
+        <figcaption style="margin-top: 0.6rem; font-size: 0.82rem; color: var(--text-muted);">Screenshot of the Sara App Store listing coming once Sara is approved and published.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-card">
+      <p class="step-number">Step 2</p>
+      <h2>Enable the app embed in your Theme Editor</h2>
+      <p>Sara delivers offers through Shopify's app embed system, so you need to activate it in your theme before anything appears on your storefront. In your Shopify admin, go to <strong>Online Store → Themes → Customize</strong>, then open the <strong>App Embeds</strong> tab in the left panel and toggle <strong>Sara Cart Monitor</strong> on.</p>
+      <p>While you're there, you can also customize Sara's visual appearance to match your brand — the App Embeds panel exposes color options for the offer banner so it fits naturally in your store's design. Save your theme when done.</p>
+      <img class="step-screenshot" src="images/step-2-app-embed.png" alt="Shopify Theme Editor showing the App Embeds panel with Sara Cart Monitor toggled on" />
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-card">
+      <p class="step-number">Step 3</p>
+      <h2>Create your first offer in Sara Settings</h2>
+      <p>Back in the Sara dashboard, open <strong>Settings</strong> to configure your first offer. Each offer has the following fields:</p>
+      <ul>
+        <li><strong>Minimum cart value</strong> — the cart total a customer needs to reach before the offer appears. For example, set $50 to show an offer when someone's cart hits $50.</li>
+        <li><strong>Offer message</strong> — the main message displayed when the threshold is met (e.g. "You've unlocked free shipping!").</li>
+        <li><strong>Teaser message</strong> (optional) — a shorter prompt shown while the customer is still working toward the threshold (e.g. "Add $10 more for free shipping"). You can also set a <strong>teaser percentage</strong> to show a progress indicator alongside it.</li>
+        <li><strong>Start and end dates</strong> (optional) — leave these blank to keep an offer always active. Set specific dates to schedule a promotion in advance — useful for seasonal campaigns like Black Friday or holiday sales that you want to prepare ahead of time and have activate automatically.</li>
+      </ul>
+      <p>Save your settings when done. Changes take effect on your storefront within a few seconds.</p>
+      <img class="step-screenshot" src="images/step-3-settings.png" alt="Sara Settings page showing the offer configuration fields including minimum cart value, offer message, teaser, and scheduling options" />
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step-card">
+      <p class="step-number">Step 4</p>
+      <h2>See it live on your storefront</h2>
+      <p>Open your store in a browser and add items to the cart. As the cart total approaches your configured threshold, the teaser message will appear. Once the threshold is met, the offer message displays. That's Sara working.</p>
+      <p>If nothing appears, double-check that the app embed is toggled on in your theme (Step 2) and that your offer is saved with a minimum cart value your test cart actually reaches.</p>
+      <img class="step-screenshot" src="images/step-4-storefront.png" alt="A Shopify storefront showing the Sara offer banner appearing as items are added to the cart" />
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <span>&copy; 2026 Jodaks. All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
